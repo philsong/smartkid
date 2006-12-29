@@ -1,0 +1,297 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\smartkid.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\smartkid.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 243, 128
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ABOUTCTRL,"Static",SS_BLACKFRAME,0,0,243,128
+END
+
+IDD_SMARTKID_DIALOG DIALOGEX 0, 0, 286, 293
+STYLE DS_SETFONT | DS_3DLOOK | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION "智慧小子SmartKid V0.85(Build20061223)"
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_ATTACKIPADDRESS,"SysIPAddress32",WS_TABSTOP,181,
+                    16,76,12,WS_EX_CLIENTEDGE
+    GROUPBOX        "DRDoS配置模块",IDC_REFLECT,123,83,150,144
+    LISTBOX         IDC_REFLECTLIST,133,142,91,79,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "载入反射源",IDC_LOAD,231,140,38,12
+    PUSHBUTTON      "导出反射源",IDC_SAVE,231,156,39,12
+    PUSHBUTTON      "循环反射攻击",IDC_DRDOSATTACK,199,91,47,12
+    PUSHBUTTON      "关于",IDC_ABOUT,217,260,38,14
+    PUSHBUTTON      "添加反射源",IDC_ADDIP,231,125,38,12
+    EDITTEXT        IDC_TARGETDOMAIN,50,16,71,12,ES_AUTOHSCROLL
+    LTEXT           "域名：",IDC_ATTACKIP2,23,17,23,10
+    EDITTEXT        IDC_DDOSPORT,173,47,17,12,ES_AUTOHSCROLL
+    LTEXT           "攻击端口：",IDC_ATTACKIP3,133,49,34,10
+    PUSHBUTTON      "转换->",IDC_DOMAINTOIP,132,16,27,12
+    PUSHBUTTON      "开始扫描",IDC_SCANPORT,25,103,35,11
+    LTEXT           "端口开放列表：",IDC_STATIC,25,120,56,9
+    CONTROL         "特殊端口扫描",IDC_CHECKALL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,78,52,10
+    EDITTEXT        IDC_STARTPORT,62,49,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENDPORT,62,63,19,12,ES_AUTOHSCROLL
+    LTEXT           "起始端口：",IDC_STATIC,25,51,35,8
+    LTEXT           "结束端口：",IDC_STATIC,25,65,35,8
+    GROUPBOX        "端口扫描配置模块",IDC_STATIC,13,34,107,193,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "",IDC_SCANPROGRESS,"msctls_progress32",0x1,13,232,259,9,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "DDoS攻击",IDC_DDOSATTACK,199,47,40,12
+    CONTROL         "",IDC_REFLECTIP,"SysIPAddress32",WS_TABSTOP,133,125,65,
+                    12
+    EDITTEXT        IDC_DRDOSPORT,173,92,17,12,ES_AUTOHSCROLL
+    GROUPBOX        "DDoS配置模块",IDC_STATIC,123,34,149,46
+    GROUPBOX        "对象",IDC_STATIC,13,6,259,26
+    LTEXT           "攻击端口：",IDC_ATTACKIP4,133,94,34,10
+    EDITTEXT        IDC_REFLECTPORT,203,125,21,12,ES_AUTOHSCROLL
+    CONTROL         "启用SYN扫描",IDC_SYN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,25,89,57,10
+    LTEXT           "IP：",IDC_ATTACKIP5,167,17,14,10
+    CONTROL         "SYN",IDC_DDOSSYN,"Button",BS_AUTORADIOBUTTON,171,62,30,
+                    10
+    CONTROL         "ICMP",IDC_DDOSICMP,"Button",BS_AUTORADIOBUTTON,204,62,
+                    33,10
+    LTEXT           "攻击方式：",IDC_ATTACKIP6,133,62,34,10
+    CONTROL         "SYN",IDC_DRDOSSYN,"Button",BS_AUTORADIOBUTTON,171,107,
+                    30,10
+    CONTROL         "ICMP",IDC_DRDOSICMP,"Button",BS_AUTORADIOBUTTON,204,107,
+                    33,10
+    LTEXT           "攻击方式：",IDC_ATTACKIP7,133,107,34,10
+    EDITTEXT        IDC_THREADNUM,45,243,21,12,ES_AUTOHSCROLL
+    LTEXT           "线程数：",IDC_STATIC,17,245,28,8
+    PUSHBUTTON      "版本更新",IDC_UPDATE,79,260,39,14
+    PUSHBUTTON      "停止",IDC_PAUSE,74,244,17,10
+    LTEXT           "http://www.dream2fly.net",IDC_URL,78,279,80,8
+    LTEXT           "Copyright (C) 2006",IDC_STATIC,14,279,61,8
+    LTEXT           "songbohr@163.com",IDC_EMAIL,199,278,68,10
+    LTEXT           "E-Mail:",IDC_STATIC,174,279,23,8
+    PUSHBUTTON      "Sniffer",IDC_SNIFFER,33,260,38,14
+    GROUPBOX        "",IDC_STATIC,13,226,260,50
+    CONTROL         "",IDC_IPPORT,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,21,136,92,85
+    LTEXT           "",IDC_LOCALIP,166,245,99,8
+    PUSHBUTTON      "帮助",IDC_README,171,260,38,14
+    PUSHBUTTON      "软件讨论区",IDC_GODISCUSS,126,260,38,14
+END
+
+IDD_SNIFFER_DIALOG DIALOGEX 0, 0, 461, 295
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,404,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,404,24,50,14
+    CONTROL         "",IDC_SNIFFER_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,26,345,99
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 207, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "请输入注册号"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "登录",IDOK,37,80,50,14
+    PUSHBUTTON      "退出",IDCANCEL,112,80,50,14
+    EDITTEXT        IDC_LOGINNAME,83,30,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,83,52,78,14,ES_AUTOHSCROLL
+    LTEXT           "用户号：",IDC_STATIC,37,34,34,8
+    LTEXT           "序列号：",IDC_STATIC,37,55,34,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,8,0
+ PRODUCTVERSION 0,0,8,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "梦软科技有限公司"
+            VALUE "FileDescription", "多功能攻击测试工具:Scan,DDoS,DRDoS"
+            VALUE "FileVersion", "0, 0, 8, 0"
+            VALUE "InternalName", "smartkid"
+            VALUE "LegalCopyright", "(C) www.dream2fly.net。保留所有权利。"
+            VALUE "OriginalFilename", "smartkid"
+            VALUE "ProductName", "智慧小子"
+            VALUE "ProductVersion", "0, 0, 8, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SMARTKID_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 279
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_SNIFFER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 454
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 288
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOADING             BITMAP                  "res\\loading.bmp"
+IDB_LOGO                BITMAP                  "res\\logo.bmp"
+IDB_BACKGROUND          BITMAP                  "res\\background.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 smartkid(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\smartkid.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
